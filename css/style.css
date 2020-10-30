@@ -1,4 +1,117 @@
 * {
-  background-color: #181f2a;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+@media screen and (max-width: 2000px) and (min-width: 375px) {
+  body {
+    background-color: #181f2a;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+.productive {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productive .productive1 img {
+  margin-top: 10px;
+  margin-left: 2%;
+}
+
+.productive .productive1 h2 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.productive .productive1 p {
+  height: 35px;
+  margin: auto;
+  font-weight: 400px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: left;
+}
+
+.testimonio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .testimonio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.testimonio article {
+  background: #202a3c;
+  padding: 37px;
+  margin: 15px;
+  height: 220px;
+  width: 400px;
+}
+
+.testimonio article img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.testimonio article .imgh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section.early {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #1c2431;
+  height: 200px;
+  width: 1000px;
+  border-radius: 2%;
+}
+
+footer {
+  background-color: #0b1523;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
