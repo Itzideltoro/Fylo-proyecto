@@ -2,20 +2,14 @@ $darkblueback: hsl(218, 28%, 13%);
 $email: hsl(217, 28%, 15%);
 $footer:hsl(216, 53%, 9%);
 $testimonio:hsl(219, 30%, 18%);
-$neutro:hsl(0, 0%, 100%)
-$ralewey: font-family: 'Raleway', sans-serif;
-$opensans: font-family: 'Open Sans', sans-serif;
+$neutro:hsl(0, 0%, 100%);
 
 
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: $darkblue;
-    @media screen and (max-width:1440px) and (min-width:375px){
-        background-color:$darkblue;
-    }
-        
-    }
+
+* {
+    margin: 0px;
+    padding:
+    background-color: $darkblueback;
+  
 }
 
