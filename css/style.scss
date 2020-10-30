@@ -20,26 +20,25 @@ $neutro:hsl(0, 0%, 100%);
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
-    @media screen and (max-width:2000px) and (min-width:375px) {
+    @media screen and (max-width:2000px) and (min-width:200px) {
         background-color: $darkblueback;
     }
-    @media screen and (max-width:540px){
+    @media screen and (max-width:200px){
         font-size: 12px;
         
     }
+
     color:$neutro
 }
 
 .productive {
-    padding: 200px;
+   padding: 30px;  
 }
 
 .productive .productive1 {
-    
-  max-width: 1800px;
-  margin-top: 90px;
-  padding: 0 20px;
+  
   display:flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 
@@ -48,17 +47,23 @@ body{
  max-width: 500px;
 
   }
+
  
  h2 {
      font-size: 50px;
+     margin-bottom: 25px;
 
  }
 
+ .p1 {
+     margin-bottom: 25px;
 
+ }
 
-
-    
-   
+ .p2 {
+    margin-bottom: 25px;
+ }
+  
 
 }
 
@@ -109,20 +114,20 @@ margin-bottom: 140px;
     flex-wrap: wrap;
 }
 
-section.early{
+.early{
     display: flex;
     align-items: center;
     background: $email;
     height: 250px;
     margin:0 auto;
-    width: 800px;
+    width: 50%;
     border-radius: 2%;
     filter:drop-shadow(8px 5px 5px $footer);
     text-align:center;
     margin-bottom: -100px;
 
     h2{
-        font-size: 30px;
+        font-size: 200%;
         margin-top: 35;
     }
     
@@ -130,9 +135,9 @@ section.early{
         padding: 3%;
     }
 
-    #section-email{
-        width: 350px;
-        height: 40px;
+    #section-email {
+        width: 45%;
+        height: 50px;
         border-radius: 25px;
         outline: none;
         border: none;
@@ -147,13 +152,40 @@ section.early{
         }
 
         #section-email-btn {
-            width: 150px;
-            height: 40px;
+            width: 25%;
+            height: 50px;
             border-radius: 25px;
             text-align: center;
             color: $neutro;
+            background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
+            
         }
-        
+
+        @media (max-width:768px){
+            
+            font-size: 90%;
+
+            section.early {
+                font-size: 1%;
+                height: 300px;
+            }
+            
+            #section-email {
+                width: 50%;
+                height: 30px;
+                margin-bottom: 10px;
+                margin-right:0;
+
+            }
+
+            #section-email-btn {
+                width: 50%;
+                height:30px;
+                margin-left:0;
+
+            }
+            
+        }
     
     }
 
@@ -163,7 +195,7 @@ section.early{
 footer{
    
     background-color: $footer;
-    padding:90px 0;
+    padding:50px 0;
 }
 
 
@@ -189,17 +221,9 @@ footer .izqcolumn{
     list-style: none;
     margin-bottom: 5px;
     margin-top: 10px;
-    padding: 30 px 0px;
+    padding: 30px 0px;
      
 }
-
-
-
-
-
-
-
-
 
 
 
