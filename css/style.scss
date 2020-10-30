@@ -8,6 +8,7 @@ $testimonio:hsl(219, 30%, 18%);
 $neutro:hsl(0, 0%, 100%);
 
 
+
 * {
     margin: 0px;
     padding: 0px;
@@ -28,44 +29,45 @@ body{
     }
     color:$neutro
 }
+
 .productive {
-    display: flex;
-   align-items: center;
-   flex-direction: column; 
-   
-    
+    padding: 200px;
 }
 
 .productive .productive1 {
+    
+  max-width: 1800px;
+  margin-top: 90px;
+  padding: 0 20px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+  .productivep {
+ max-width: 500px;
+
+  }
+ 
+ h2 {
+     font-size: 50px;
+
+ }
+
+
+
 
     
-     img{
-    margin-top: 10px;
-    margin-left: 2%; 
-    
-    }
-  
-   h2 {
-        font-size: 25px;
-        font-weight: 700;
-        margin: 0; 
-        padding: 50px;
-    }
+   
 
-   .productivep p{
-        
-        height: 35px;
-        margin:  auto;
-        font-weight: 400px;
-        justify-content: space-evenly;
-        text-align: left;       
-    }
 }
+
 
 .testimonio {
 display: flex;
 align-items: center;
 justify-content: space-evenly;
+margin-bottom: 140px;
 @media (max-width:768px) {
     flex-direction:column;
     font-size: 16px;
@@ -74,6 +76,13 @@ justify-content: space-evenly;
 @media (max-width:1200px){
     flex-direction:column;
     
+}
+
+
+.imgtext{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 
@@ -89,28 +98,28 @@ justify-content: space-evenly;
 }
 
 .testimonio article img {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
 .testimonio article .imgh {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: left;
+    flex-wrap: wrap;
 }
 
 section.early{
     display: flex;
     align-items: center;
     background: $email;
-    height: 200px;
+    height: 250px;
     margin:0 auto;
     width: 800px;
     border-radius: 2%;
     filter:drop-shadow(8px 5px 5px $footer);
     text-align:center;
-    margin-top: 10px;
+    margin-bottom: -100px;
 
     h2{
         font-size: 30px;
@@ -120,6 +129,31 @@ section.early{
     p {
         padding: 3%;
     }
+
+    #section-email{
+        width: 350px;
+        height: 40px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        margin-right: 20px;
+       
+        
+        }
+
+        #section-email.placeholder {
+            color:$testimonio;
+            margin-right: 50px;
+        }
+
+        #section-email-btn {
+            width: 150px;
+            height: 40px;
+            border-radius: 25px;
+            text-align: center;
+            color: $neutro;
+        }
+        
     
     }
 
@@ -127,37 +161,43 @@ section.early{
 
 
 footer{
-    display: flex;
+   
     background-color: $footer;
-    bottom: 0px;
-    height: 250px;
-    width: 100%;
+    padding:90px 0;
 }
 
-footer img {
-    height: 20%;
-    width: 24%;
-  
-}
+
+   
+
 
 footer .contenedorprin {
-  
-    display: flex;
-    padding: 10px;
+
+  max-width: 1800px;
+  margin-top: 90px;
+  padding: 0 20px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+ 
 }
+
 
 footer .izqcolumn{
-
-    width: 45%;
     
+    width: 20%;
+    list-style: none;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 30 px 0px;
+     
 }
 
 
 
 
-button .footer {
-    
-}
+
+
 
 
 
