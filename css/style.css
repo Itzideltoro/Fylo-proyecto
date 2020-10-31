@@ -8,41 +8,35 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
+  background-color: #181f2a;
   color: white;
 }
 
-@media screen and (max-width: 2000px) and (min-width: 200px) {
-  body {
-    background-color: #181f2a;
-  }
-}
-
-@media screen and (max-width: 200px) {
-  body {
-    font-size: 12px;
-  }
-}
-
 .productive {
-  padding: 30px;
+  width: 100%;
+  background-color: #181f2a;
 }
 
 .productive .productive1 {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5%;
 }
 
 .productive .productive1 .productivep {
-  max-width: 500px;
+  padding: 5%;
 }
 
 .productive .productive1 h2 {
@@ -58,7 +52,15 @@ body {
   margin-bottom: 25px;
 }
 
+.productive .productive1 img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
 .testimonio {
+  background-color: #181f2a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +70,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-bottom: 140px;
+  margin-bottom: 90px;
 }
 
 @media (max-width: 768px) {
@@ -138,7 +140,7 @@ body {
   background: #1c2431;
   height: 250px;
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
   border-radius: 2%;
   -webkit-filter: drop-shadow(8px 5px 5px #0b1523);
           filter: drop-shadow(8px 5px 5px #0b1523);
@@ -173,7 +175,6 @@ body {
   width: 25%;
   height: 50px;
   border-radius: 25px;
-  text-align: center;
   color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#00d2ff), color-stop(51%, #3a7bd5), to(#00d2ff));
   background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
@@ -202,7 +203,7 @@ body {
 
 footer {
   background-color: #0b1523;
-  padding: 50px 0;
+  padding: 2%;
 }
 
 footer .contenedorprin {
@@ -228,5 +229,15 @@ footer .izqcolumn {
   margin-bottom: 5px;
   margin-top: 10px;
   padding: 30px 0px;
+  list-style: none;
+}
+
+footer .izqcolumn .izqcolumn ul li
+.medio ul li {
+  list-style: none;
+}
+
+footer .izqcolumn .derecha ul li {
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
