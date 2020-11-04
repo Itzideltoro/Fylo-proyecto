@@ -44,6 +44,7 @@ body {
 
 .img-intro {
   width: 50%;
+  margin-bottom: 20px;
 }
 
 nav {
@@ -123,6 +124,7 @@ nav a:hover {
 
 .div-2 h1 {
   color: white;
+  margin-top: 20px;
 }
 
 .div-2 p {
@@ -135,6 +137,11 @@ nav a:hover {
   margin-top: 20px;
   background-color: #339ecc;
   color: white;
+}
+
+.div-2 .btn-1:hover {
+  color: #0b1523;
+  background: white;
 }
 
 .img1-4 {
@@ -174,26 +181,50 @@ nav a:hover {
 }
 
 .mypc {
-  height: 10%;
-  width: 10%;
-  margin-left: 20%;
+  height: 5%;
+  width: 5%;
+  margin-left: 60%;
+}
+
+.parrafo {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-left: 15px;
+}
+
+.parrafo2 {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-left: 15px;
+}
+
+.parrafo3 {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-left: 15px;
+}
+
+.parrafo4 {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-left: 15px;
 }
 
 .sec {
-  height: 10%;
-  width: 10%;
+  height: 5%;
+  width: 5%;
   margin-bottom: 50%;
   margin-left: 60%;
 }
 
 .coll {
-  height: 10%;
-  width: 10%;
+  height: 5%;
+  width: 5%;
 }
 
 .file {
-  height: 10%;
-  width: 10%;
+  height: 5%;
+  width: 5%;
 }
 
 .productive {
