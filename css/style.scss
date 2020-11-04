@@ -6,11 +6,17 @@ $email: hsl(217, 28%, 15%);
 $footer: hsl(216, 53%, 9%);
 $testimonio: hsl(219, 30%, 18%);
 $neutro: hsl(0, 0%, 100%);
+$raleway: font-family "Raleway", sans-serif;
+$opensans: font-family "Open Sans", sans-serif;
+$Cyan: hsl(176, 68%, 64%);
+$Blue: hsl(198, 60%, 50%);
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  $raleway: font-family "Raleway", sans-serif;
+  $opensans: font-family "Open Sans", sans-serif;
 }
 
 body {
@@ -26,6 +32,133 @@ body {
   background-color: $darkblueback;
 
   color: $neutro;
+}
+
+.logo {
+  width: 20%;
+  height: 8%;
+
+ 
+  @media screen and ( min-width: 768px){
+    .flex-container{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+ }
+
+}
+
+
+
+.header {
+  padding: 35px;
+  text-align: center;
+}
+.img-intro {
+  width: 50%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 10px;
+
+
+  @media screen and (max-width: 678px) {
+    .nave {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  div ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    width: 100%;
+    list-style: none;
+  }
+
+  ul li a {
+    justify-content: space-between;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: $neutro;
+    display: block;
+  }
+
+  a:hover {
+    background: $neutro;
+    color: $footer;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+}
+
+.div-2 {
+  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  h1 {
+    color: $neutro;
+  }
+  p {
+    color: $neutro;
+  }
+  .btn-1 {
+    padding: 20px 80px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: $Blue;
+    color: $neutro;
+  }
+}
+
+.img1-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+  text-align: center;
+
+  .img-1 {
+    color: $neutro;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+  @media (min-width: 768px) {
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.mypc {
+  height: 10%;
+  width: 10%;
+  margin-left: 20%;
+}
+.sec {
+  height: 10%;
+  width: 10%;
+  margin-bottom: 50%;
+  margin-left: 60%;
+}
+.coll {
+  height: 10%;
+  width: 10%;
+}
+.file {
+  height: 10%;
+  width: 10%;
 }
 
 .productive {
@@ -72,11 +205,9 @@ body {
     display: flex;
     width: 100%;
   }
-  .p3{
-    
-      color: hsl(176, 68%, 64%);
-      border-color: hsl(176, 68%, 64%);
-     
+  .p3 {
+    color: hsl(176, 68%, 64%);
+    border-color: hsl(176, 68%, 64%);
   }
 }
 
@@ -86,25 +217,20 @@ body {
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 90px;
-  
- 
-  
 
   @media (max-width: 768px) {
     flex-direction: column;
     font-size: 16px;
     align-items: center;
     .comillas {
-    left: auto;
-    top: -20px;
+      left: auto;
+      top: -20px;
     }
-    
   }
 
   @media (max-width: 1200px) {
     flex-direction: column;
   }
-
 
   .imgtext {
     display: flex;
@@ -118,7 +244,6 @@ body {
   }
 }
 
-
 .testimonio article {
   background: $testimonio;
   padding: 37px;
@@ -128,19 +253,11 @@ body {
   position: relative;
 }
 
-  .comillas {
-    position: absolute;
-    left: -1%;
-    top: -20px;
-    
-  }
-  
-  
-
-
-
-
-
+.comillas {
+  position: absolute;
+  left: -1%;
+  top: -20px;
+}
 
 .testimonio article img {
   width: 40px;
@@ -152,7 +269,6 @@ body {
   display: flex;
   align-items: left;
   flex-wrap: wrap;
-  
 }
 
 .early {
@@ -168,7 +284,6 @@ body {
   text-align: center;
   margin-bottom: -100px;
 
-
   h2 {
     font-size: 200%;
     margin-top: 35;
@@ -176,7 +291,6 @@ body {
 
   p {
     padding: 3%;
-    
   }
 
   #section-email {
@@ -234,7 +348,6 @@ footer {
   background-color: $footer;
   display: flex;
   flex-wrap: wrap;
-    
 }
 
 footer .contenedorprin {
@@ -247,13 +360,13 @@ footer .contenedorprin {
   color: $neutro;
   margin-left: 8%;
 
-.medio {
- margin-top: 50px;
-}
+  .medio {
+    margin-top: 50px;
+  }
 
-.redes {
-margin-top: 50px;
-}
+  .redes {
+    margin-top: 50px;
+  }
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -261,16 +374,14 @@ margin-top: 50px;
     footer .contenedorprin {
       max-height: 12222000px;
     }
-    
+
     .izqcolumn img {
       margin-bottom: 20px;
-
     }
     .bullet-3 {
-      padding-right:70px;
+      padding-right: 70px;
       padding-left: 15px;
       width: 450%;
-      
     }
 
     .medio1 {
@@ -282,54 +393,41 @@ margin-top: 50px;
       }
 
       .derecha {
-      padding-left: 15px;
-      margin-bottom: 20px;
+        padding-left: 15px;
+        margin-bottom: 20px;
       }
 
       .contacto {
-      padding-left: 15px;
-      
+        padding-left: 15px;
       }
     }
 
-      .redes {
-        margin-top: 50px;
-        padding-left: 120px;
-        padding-bottom: 20px;
-      
-      }
-    
-    
-
-  
-}
-   
+    .redes {
+      margin-top: 50px;
+      padding-left: 120px;
+      padding-bottom: 20px;
+    }
   }
-
+}
 
 footer .izqcolumn {
   width: 25%;
   list-style: none;
- 
- 
 
   .izqcolumn ul li {
     color: $neutro;
   }
 
-  .medio  li {
-   color: $neutro;
-    
-    
+  .medio li {
+    color: $neutro;
   }
 
   .medio1 ul {
     display: flex;
-    justify-content:space-around ;
-
+    justify-content: space-around;
   }
 
-  .derecha  li {
+  .derecha li {
     text-decoration: none;
     color: $neutro;
   }
@@ -341,13 +439,11 @@ footer .izqcolumn {
 }
 
 .bullet {
-  
   list-style: url(../images/icon-phone.svg);
   margin-bottom: 10px;
 }
 
 .bullet1 {
-  
   list-style: url(../images/icon-email.svg);
 }
 
